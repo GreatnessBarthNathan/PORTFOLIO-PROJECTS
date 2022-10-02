@@ -1,0 +1,63 @@
+.auth-wrapper {
+    width: 350px;
+    margin: 50px auto;
+    text-align: center;
+    box-shadow: 0 3px 5px darkslategray;
+    padding: 40px 20px;
+    border-radius: 10px;
+    color: blue;
+}
+
+.auth-wrapper a {
+    color: purple;
+    text-decoration: none;
+}
+.auth-wrapper h1, .auth-wrapper h2 {
+    margin-bottom: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+form input {
+    padding: 10px;
+    background: transparent;
+    border: 1px solid blue;
+    border-radius: 4px;
+    color: black;
+}
+
+label {
+    color: blue;
+}
+
+form input::placeholder {
+    color: darkslategray;
+}
+
+form button {
+    padding: 10px;
+    color: white;
+    background: rgb(189, 63, 189);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.redirect {
+    color: blue;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+/* 
+===============
+MEDIA QUERRY
+===============
+*/
+.auth-wrapper {
+box-shadow: none;
+}

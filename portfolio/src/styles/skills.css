@@ -1,0 +1,41 @@
+body {
+    background: whitesmoke;
+}
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.skills{
+    list-style: none;
+    counter-set: list-counter;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 18px;
+    width: 500px;
+}
+.skills li {
+    display: flex;
+    align-items: center;
+}
+.skills li::before {
+    counter-increment: list-counter;
+    content: counter(list-counter);
+    background: purple;
+    padding: 8px 12px;
+    border-radius: 50%;
+    border: 3px solid darkgoldenrod;
+    color: white;
+    margin-right: 15px;
+}
+/* 
+MEDIA QUERRY
+*/
+@media (max-width: 570px) {
+.skills {
+        width: 350px;
+        padding-bottom: 50px;
+    }
+}

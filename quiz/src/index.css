@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: lightblue;
+}
+
+/* 
+============
+SETUP FORM
+============
+*/
+.form-container {
+  width: 500px;
+  background: white;
+  margin: 100px auto;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px black;
+}
+.form-container h1 {
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px auto;
+}
+form div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+}
+form input,
+form select {
+  padding: 5px;
+  border: 2px solid lightblue;
+  border-radius: 5px;
+  font-size: 15px;
+}
+form button {
+  padding: 10px;
+  border-radius: 5px;
+  background: lightblue;
+  border: none;
+  font-weight: bold;
+  font-weight: 16px;
+  cursor: pointer;
+}
+form label {
+  font-size: 18px;
+  font-weight: bold;
+  color: darkslategray;
+}
+
+/* 
+LOADING
+*/
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 300px;
+}
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.loading div {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 5px solid blue;
+  border-top: 3px solid white;
+  animation: spinner 0.5s linear infinite;
+}
+/* 
+=============
+QUESTIONS
+=============
+*/
+.question-container {
+  width: 500px;
+  background: white;
+  box-shadow: 0 5px 10px black;
+  margin: 100px auto;
+  padding: 35px;
+  text-align: center;
+  border-radius: 10px;
+}
+.question-container p {
+  text-align: right;
+  margin-bottom: 15px;
+  color: green;
+  font-weight: bold;
+  font-size: 17px;
+}
+.answer-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px auto;
+}
+.answer-btns button {
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  background: lightseagreen;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.answer-btns button:hover {
+  background: lightblue;
+  color: darkslategray;
+}
+.next {
+  padding: 10px;
+  border-radius: 5px;
+  background: lightgreen;
+  border: none;
+  color: darkslategray;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.5s ease;
+}
+.next:hover {
+  color: black;
+  background: cyan;
+}
+/* 
+=========
+MODAL
+=========
+*/
+.modal-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal {
+  background: white;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+}
+.modal h1 {
+  letter-spacing: 2px;
+}
+.modal p {
+  font-weight: bold;
+  color: darkslategray;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.modal button {
+  padding: 10px;
+  background: gold;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* 
+===============
+MEDIA QUERY
+===============
+*/
+@media (max-width: 570px) {
+  /* 
+============
+SETUP FORM
+============
+*/
+  .form-container {
+    width: 350px;
+    margin: 100px auto;
+    padding: 30px;
+  }
+  /* 
+=============
+QUESTIONS
+=============
+*/
+  .question-container {
+    width: 350px;
+    margin: 100px auto;
+    padding: 30px;
+  }
+  .question-container h2 {
+    font-size: 20px;
+  }
+  .answer-btns button:hover {
+    background: lightseagreen;
+    color: white;
+  }
+  /* 
+=========
+MODAL
+=========
+*/
+  .modal {
+    width: 350px;
+    padding: 25px 15px;
+    gap: 15px;
+  }
+  .modal h1 {
+    font-size: 22px;
+  }
+  /* 
+  LOADING
+  */
+  .loading {
+    margin-top: 300px;
+  }
+}

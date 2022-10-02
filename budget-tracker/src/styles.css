@@ -1,0 +1,337 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(175, 247, 247);
+}
+
+/* 
+=============
+AMOUNTS
+=============
+*/
+header {
+  display: flex;
+  width: 60%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+header > div {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+}
+.earned {
+  color: green;
+  margin-top: 5px;
+}
+.spent {
+  color: red;
+  margin-top: 5px;
+}
+.available {
+  margin-top: 5px;
+}
+
+/* 
+==============
+FORM
+==============
+*/
+form {
+  width: 400px;
+  margin: 40px auto;
+  text-align: center;
+  padding-top: 35px;
+  position: relative;
+}
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px; 
+  overflow: hidden;
+  gap: 10px;
+}
+#text {
+  width: 80%;
+  padding: 8px;
+  border-radius: 10px; 
+  border: none;
+  font-size: 16px;
+  outline: none;
+  background: white;
+}
+#number {
+  width: 20%;
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
+.input-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  gap: 10px;
+}
+.income-btn {
+  background: darkgreen;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  padding: 8px 15px;
+  text-transform: uppercase;
+}
+.expense-btn {
+  background: darkred;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  padding: 8px 15px;
+  text-transform: uppercase;
+}
+.alert {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+}
+.success {
+  background: green;
+}
+.danger {
+  background: red;
+}
+
+/* 
+=============
+WRAPPER
+=============
+*/
+.wrapper {
+  display: flex;
+  width: 60%;
+  margin: 50px auto;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* 
+================
+INCOME & EXPENSE
+================
+*/
+main {
+  width: 100%;
+  text-align: center;
+}
+main > h2 {
+  border-bottom: 2px solid darkslategray;
+  margin-bottom: 20px;
+}
+.income-container, .expense-container {
+  text-align: center;
+  width: 100%;
+}
+.income, .expense {
+  margin-bottom: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background: white;
+  padding: 5px;
+  border-radius: 10px;
+  gap: 10px;
+}
+#income {
+  color: green;
+}
+
+#expense {
+  color: red;
+}
+.date {
+position: absolute;
+top: -13px;
+left: 5px;
+font-size: 12px;
+}
+.detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+.buttons button {
+  background: transparent;
+  border: none;
+  background: pink;
+  padding: 5px;
+  color: red;
+  border-radius: 5px;
+
+}
+.detail p {
+  text-transform: capitalize;
+}
+.income .detail h4 {
+  color: green;
+}
+.expense .detail h4 {
+  color: red;
+}
+
+/* 
+==================
+MODAL
+==================
+*/
+.modal-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4), rgba(0,0,0,0.4));
+}
+.modal {
+  width: 350px;
+  height: 100px;
+  background: white;
+  border-radius: 20px;
+  border: 2px solid darkslategray;
+  text-align: center;
+  padding: 20px;
+}
+.modal p {
+  font-size: 16px;
+  font-weight: bold;
+}
+.yes-no {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+.yes {
+  border: 1px solid darkgreen;
+  font-weight: bold;
+  background: transparent;
+  color: darkgreen;
+  padding: 3px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.no {
+  border: 1px solid red;
+  font-weight: bold;
+  background: transparent;
+  color: red;
+  padding: 3px 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* 
+================
+MEDIA QUERY
+================
+*/
+
+
+@media (max-width: 767px) {
+/* 
+=============
+AMOUNTS
+=============
+*/
+  header {
+    width: 80%;
+  }
+
+/* 
+=============
+WRAPPER
+=============
+*/
+.wrapper {
+  width: 80%;
+}
+}
+
+@media (max-width: 500px) {
+/* 
+=============
+AMOUNTS
+=============
+*/
+  header {
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  header>div {
+    padding: 10px;
+  }
+
+/* 
+==============
+FORM
+==============
+*/
+form {
+  width: 350px;
+  margin: 30px auto;
+}
+
+.input-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  gap: 10px;
+}
+.income-btn {
+  font-size: 12px;
+}
+.expense-btn {
+  font-size: 12px;
+}
+
+/* 
+=============
+WRAPPER
+=============
+*/
+.wrapper {
+  width: 80%;
+  flex-direction: column;
+}
+}

@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+======
+NAVBAR
+======
+*/
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 75px;
+  border-bottom: 5px solid darkgoldenrod;
+  position: relative;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: darkgoldenrod;
+}
+.code {
+  font-size: 40px;
+}
+.logo span {
+  font-size: 25px;
+  font-weight: bold;
+  color: darkgoldenrod;
+}
+.links-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  list-style: none;
+}
+.show-links {
+  height: auto;
+}
+.links li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: darkgoldenrod;
+  transition: all 0.5s linear;
+}
+.links li a:hover {
+  color: blue;
+}
+.nav-toggle {
+  background: transparent;
+  font-size: 25px;
+  border: none;
+  color: blue;
+  transition: all 0.3s linear;
+  visibility: hidden;
+}
+
+/* 
+==============
+MEDIA QUERRY
+==============
+*/
+@media (max-width: 570px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    padding-bottom: 0;
+    overflow: hidden;
+    height: auto;
+  }
+  .logo {
+    margin-bottom: 10px;
+  }
+  .links-container {
+    display: block;
+    height: 0;
+    transition: all 0.3s ease;
+  }
+  .links {
+    display: block;
+    height: auto;
+    padding-bottom: 10px;
+  }
+  .links li {
+    padding: 10px 0;
+    transition: all 0.5s linear;
+  }
+  .links li:hover {
+    transform: translateX(5%);
+  }
+  .nav-toggle {
+    visibility: visible;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 25px;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+  .nav-toggle:hover {
+    color: blue;
+  }
+}

@@ -1,0 +1,55 @@
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/src/images/homePage.jpg');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    border-bottom: 5px solid darkgoldenrod;
+    padding: 145px 0;
+}
+.my-picture {
+    border-radius: 50%;
+    border: 5px solid darkgoldenrod;
+}
+.content {
+    text-align: center;
+    width: 600px;
+}
+.content > h1 {
+    color: goldenrod;
+    font-size: 40px;
+    margin: 10px 0;
+}
+.content > p {
+    color: white;
+    font-size: 18px;
+}
+.icons {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.icons a {
+    color: goldenrod;
+    font-size: 20px;
+}
+/* 
+==================
+MEDIA QUERRY
+==================
+*/
+@media (max-width: 570px) {
+.my-picture {
+        width: 200px;
+        height: 200px;
+    }
+.content>h1 {
+    color: goldenrod;
+    font-size: 25px;
+    margin: 10px 0;
+}
+}

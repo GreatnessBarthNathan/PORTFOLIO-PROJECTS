@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+============
+header
+============
+*/
+header {
+  text-align: center;
+  margin-top: 50px;
+  font-family: verdana;
+}
+header h1 {
+  font-size: 35px;
+}
+header h3 {
+font-size: 16px;
+margin: 10px 0;
+color: green;
+}
+
+/* 
+==============
+FORM
+==============
+*/
+form {
+  width: 300px;
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+/* Alert */
+.alert {
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: 16px;
+  color: white;
+}
+.success {
+  background: green;
+}
+.danger {
+  background: red;
+}
+.title {
+  background: lightgray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.title input {
+  width: 85%;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.note {
+  background: lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+textarea {
+  padding: 10px;
+  width: 85%;
+  font-size: 15px;
+}
+label {
+  font-weight: bold;
+}
+form button {
+color: white;
+background: darkgreen;
+border: none;
+padding: 10px;
+font-size: 16px;
+}
+
+/* 
+===============
+NOTE
+===============
+*/
+.note-container {
+  width: 60%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 15px;
+  padding-bottom: 20px;
+}
+
+.note-content {
+  box-shadow: 0 3px 5px black;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 15px;
+}
+.note-content h3 {
+  border-bottom: 1px solid darkgray;
+  padding-bottom: 5px;
+}
+.note-content span {
+  font-size: 15px;
+}
+.paragraph {
+  line-height: 25px;
+}
+.buttons{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+.buttons button {
+  padding: 10px 10px;
+  width: 33.33%;
+  transition: all 0.5s linear;
+  cursor: pointer;
+}
+.buttons button:hover {
+  background: silver;
+  color: black;
+  font-weight: bold;
+}
+.view {
+  background: blue;
+  border: none;
+  color: white;
+}
+.edit {
+  background: darkgreen;
+  border: none;
+  color: white;
+}
+.delete {
+  background: darkred;
+  border: none;
+  color: white;
+}
+
+/* 
+==============
+MODAL
+==============
+*/
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+}
+.modal-content {
+  width: 500px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 15px;
+}
+.modal-content h2 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.modal-content p {
+  font-size: 17px;
+  line-height: 30px;
+}
+.modal-content button {
+background: transparent;
+color: darkred;
+cursor: pointer;
+font-size: 25px;
+border: none;
+}
+
+@media (max-width: 570px) {
+  /* 
+  ===============
+  FORM
+  ===============
+  */
+  .title {
+      background: whitesmoke;
+    }
+  .note {
+      background: whitesmoke;
+    }
+  /* 
+  ===============
+  NOTE
+  ===============
+  */
+  .note-container {
+    width: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 50px auto;
+      gap: 15px;
+    }
+  .note-content {
+    width: 350px;
+  }
+.note-content h3 {
+  border-bottom: 1px solid darkgray;
+ font-size: 15px;
+}
+.note-content h3 span {
+  font-size: 13px;
+}
+
+.note-content span {
+  font-size: 15px;
+}
+.buttons button {
+  padding: 5px;
+  width: 33.3%;
+  transition: all 0.5s linear;
+  cursor: pointer;
+}
+.buttons button:hover {
+  background: transparent;
+  color: black;
+  font-weight: bold;
+  border: 1px solid black;
+}
+.view {
+  background: blue;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+
+.edit {
+  background: green;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+
+.delete {
+  background: red;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* 
+==============
+MODAL
+==============
+*/
+.modal-content {
+  width: 350px;
+}
+}
