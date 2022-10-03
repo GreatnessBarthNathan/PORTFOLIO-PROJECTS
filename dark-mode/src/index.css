@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.light {
+  background: whitesmoke;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  padding: 20px;
+  padding-bottom: 38px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  transition: all 0.3s linear;
+}
+.dark {
+  background: darkslategray;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  padding: 20px;
+  padding-bottom: 38px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  transition: all 0.3s linear;
+}
+/* 
+NAVBAR
+*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 400px;
+}
+nav h1 {
+  font-size: 30px;
+}
+.dark nav h1 {
+  font-size: 30px;
+  color: white;
+}
+.toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+#light-toggle {
+  font-size: 25px;
+  color: darkslategray;
+}
+.dark #light-toggle {
+  color: yellow;
+}
+#dark-toggle {
+  font-size: 25px;
+  color: black;
+}
+.dark #dark-toggle {
+  color: lightgray;
+}
+
+/* 
+ARTICLE
+*/
+.dark section h2 {
+  color: whitesmoke;
+}
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 30px auto;
+  box-shadow: 0 3px 5px black;
+  padding: 20px;
+  border-radius: 5px;
+}
+.dark .article {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 30px auto;
+  box-shadow: 0 3px 5px white;
+  padding: 20px;
+  border-radius: 5px;
+  background: black;
+}
+.article h1 {
+  color: crimson;
+  text-transform: capitalize;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+.dark .article h1 {
+  color: lightgray;
+  text-transform: capitalize;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+.article p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.dark .article p {
+  color: white;
+}
+.trophy {
+  display: flex;
+  gap: 5px;
+  color: darkgoldenrod;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.dark .trophy {
+  display: flex;
+  gap: 5px;
+  color: goldenrod;
+  align-items: center;
+}
+#length {
+  color: black;
+  font-weight: bold;
+}
+.dark #length {
+  color: white;
+  font-weight: bold;
+}
+
+/* 
+MEDIA QUERY
+*/
+@media (max-width: 570px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 300px;
+    margin: auto;
+  }
+  nav h1 {
+    font-size: 25px;
+  }
+  .dark nav h1 {
+    font-size: 25px;
+    color: white;
+  }
+  #light-toggle,
+  #dark-toggle {
+    font-size: 20px;
+  }
+}
