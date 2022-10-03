@@ -14,7 +14,7 @@ function Home() {
         </p>
         <div className='icons'>
           <a
-            href='https://github.com/GreatnessBarthNathan/Portfolio-Projects.git'
+            href='https://github.com/GreatnessBarthNathan/PORTFOLIO-PROJECTS.git'
             target='_blank'
           >
             <FaGithub />
