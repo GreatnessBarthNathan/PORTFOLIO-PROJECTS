@@ -4,6 +4,7 @@ import mealFinder from "./images/meal-db.png"
 import shoppingCart from "./images/shopping-cart.png"
 import pagination from "./images/pagination.png"
 import quiz from "./images/quiz.png"
+import lightDarkMode from "./images/light-dark-mode.png"
 
 export const skills = [
   "Excellent Verbal and Writing Communication Skills, very fluent in English Language.",
@@ -57,5 +58,11 @@ export const projects = [
     name: "Quiz",
     url: "https://gbn-quiz.netlify.app/",
     img: quiz,
+  },
+  {
+    id: 7,
+    name: "Light/Dark Mode",
+    url: "https://gbn-light-dark-mode.netlify.app/",
+    img: lightDarkMode,
   },
 ]
