@@ -1,134 +1,168 @@
-import React, {useState, useEffect, useReducer, useContext} from 'react'
-import reducer from './reducer'
+import React, { useState, useEffect, useReducer, useContext } from "react"
+import reducer from "./reducer"
 const context = React.createContext()
 
-
 function getLocalStorage() {
-    let values;
-    if (localStorage.getItem('budget') === null) {
-        values = {income: [], expense: []}
-    } else {
-        values = JSON.parse(localStorage.getItem('budget'))
-    }
-    return values
+  let values
+  if (localStorage.getItem("budget") === null) {
+    values = { income: [], expense: [] }
+  } else {
+    values = JSON.parse(localStorage.getItem("budget"))
+  }
+  return values
 }
-const {income, expense} = getLocalStorage()
+const { income, expense } = getLocalStorage()
 
 const defaultState = {
-    income: income,
-    expense: expense,
-    alert: {type: false, bg: '', content: ''},
-    moneyEarned: '',
-    moneySpent: '',
-    moneyAvailable: '',
+  income: income,
+  expense: expense,
+  alert: { type: false, bg: "", content: "" },
+  moneyEarned: "",
+  moneySpent: "",
+  moneyAvailable: "",
 }
 
-function AppProvider ({children}) {
-    const [state, dispatch] = useReducer(reducer, defaultState)
-    const [detail, setDetail] = useState('')
-    const [value, setValue] = useState('')
-    const [incomeModal, setIncomeModal] = useState(false)
-    const [expenseModal, setExpenseModal] = useState(false)
-    const [entryID, setEntryID] = useState(null)
+function AppProvider({ children }) {
+  const [state, dispatch] = useReducer(reducer, defaultState)
+  const [detail, setDetail] = useState("")
+  const [value, setValue] = useState("")
+  const [incomeModal, setIncomeModal] = useState(false)
+  const [expenseModal, setExpenseModal] = useState(false)
+  const [entryID, setEntryID] = useState(null)
 
-    // INCOME
-    function handleIncome (e) {
-        e.preventDefault()
-        if (!detail && !value) {
-            dispatch({signal: 'NO DETAIL'})
-        }
-        if (detail && value) {
-            dispatch({signal: 'ENTER INCOME', detail: detail, value: parseFloat(value), id: Math.random()})
-        }
-        setDetail('')
-        setValue('')
+  // INCOME
+  function handleIncome(e) {
+    e.preventDefault()
+    if (!detail && !value) {
+      dispatch({ signal: "NO DETAIL" })
     }
-
-    // EXPENSE
-    function handleExpense (e) {
-        e.preventDefault()
-        if (!detail && !value) {
-            dispatch({signal: 'NO DETAIL'})
-        }
-        if (detail && value) {
-            dispatch({signal: 'ENTER EXPENSE', detail: detail, value: parseFloat(value), id: Math.random()})
-        }
-        setDetail('')
-        setValue('')
+    if (detail && value) {
+      dispatch({
+        signal: "ENTER INCOME",
+        detail: detail,
+        value: parseFloat(value),
+        id: Math.random(),
+      })
     }
+    setDetail("")
+    setValue("")
+  }
 
-    // REMOVE ALERT
-    function removeAlert () {
-        dispatch({signal: 'REMOVE ALERT'})
+  // EXPENSE
+  function handleExpense(e) {
+    e.preventDefault()
+    if (!detail && !value) {
+      dispatch({ signal: "NO DETAIL" })
     }
+    if (detail && value) {
+      dispatch({
+        signal: "ENTER EXPENSE",
+        detail: detail,
+        value: parseFloat(value),
+        id: Math.random(),
+      })
+    }
+    setDetail("")
+    setValue("")
+  }
 
-    useEffect(()=> {
-    const timeoutId = setTimeout(()=> {
-     removeAlert()
+  // REMOVE ALERT
+  function removeAlert() {
+    dispatch({ signal: "REMOVE ALERT" })
+  }
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      removeAlert()
     }, 1500)
-    return ()=> clearTimeout(timeoutId)
-    }, [state.alert.type])
+    return () => clearTimeout(timeoutId)
+  }, [state.alert.type])
 
-    // MONEY EARNED
-function moneyEarned () {
-    dispatch({signal: 'MONEY EARNED'})
-}
+  // MONEY EARNED
+  function moneyEarned() {
+    dispatch({ signal: "MONEY EARNED" })
+  }
 
-useEffect(()=> {
-     moneyEarned()
-}, [state.income])
+  useEffect(() => {
+    moneyEarned()
+  }, [state.income])
 
-// MONEY SPENT
-function moneySpent () {
-    dispatch({signal: 'MONEY SPENT'})
-}
+  // MONEY SPENT
+  function moneySpent() {
+    dispatch({ signal: "MONEY SPENT" })
+  }
 
-useEffect(()=> {
-   moneySpent()
-}, [state.expense])
+  useEffect(() => {
+    moneySpent()
+  }, [state.expense])
 
-// MONEY AVAILABLE
-function moneyAvailable () {
-    dispatch({signal: 'MONEY AVAILABLE'})
-}
+  // MONEY AVAILABLE
+  function moneyAvailable() {
+    dispatch({ signal: "MONEY AVAILABLE" })
+  }
 
-useEffect (()=> {
+  useEffect(() => {
     moneyAvailable()
-}, [state.moneyEarned, state.moneySpent])
+  }, [state.moneyEarned, state.moneySpent])
 
-// LOCAL STORAGE
-useEffect(()=> {
-   localStorage.setItem('budget', JSON.stringify({income: state.income, expense: state.expense}))
-}, [state.income, state.expense])
+  // LOCAL STORAGE
+  useEffect(() => {
+    localStorage.setItem(
+      "budget",
+      JSON.stringify({ income: state.income, expense: state.expense })
+    )
+  }, [state.income, state.expense])
 
-// MODAL 
-function displayIncomeModal(id) {
-setEntryID(id)
-setIncomeModal(true)
-}
-function displayExpenseModal(id) {
-setEntryID(id)
-setExpenseModal(true)
-}
+  // MODAL
+  function displayIncomeModal(id) {
+    setEntryID(id)
+    setIncomeModal(true)
+  }
+  function displayExpenseModal(id) {
+    setEntryID(id)
+    setExpenseModal(true)
+  }
 
-// DELETE EXPENSE
-function deleteExpense (id) {
-    dispatch({signal: 'DELETE EXPENSE', id: id})
+  // DELETE EXPENSE
+  function deleteExpense(id) {
+    dispatch({ signal: "DELETE EXPENSE", id: id })
     setExpenseModal(false)
-}
+  }
 
-// DELETE INCOME
-function deleteIncome (id) {
-    dispatch({signal: 'DELETE INCOME', id : id})
+  // DELETE INCOME
+  function deleteIncome(id) {
+    dispatch({ signal: "DELETE INCOME", id: id })
     setIncomeModal(false)
-}
-    return <context.Provider value={{state, detail, value, setDetail, setValue, handleIncome, handleExpense, incomeModal, setIncomeModal, displayIncomeModal, expenseModal, setExpenseModal, displayExpenseModal, deleteExpense, entryID, setIncomeModal, deleteIncome}}>
-        {children}
+  }
+  return (
+    <context.Provider
+      value={{
+        state,
+        detail,
+        value,
+        setDetail,
+        setValue,
+        handleIncome,
+        handleExpense,
+        incomeModal,
+        setIncomeModal,
+        displayIncomeModal,
+        expenseModal,
+        setExpenseModal,
+        displayExpenseModal,
+        deleteExpense,
+        entryID,
+        setIncomeModal,
+        deleteIncome,
+      }}
+    >
+      {children}
     </context.Provider>
+  )
 }
 
 export default AppProvider
 
-export function useGlobalContext () {
-    return useContext(context)
+export function useGlobalContext() {
+  return useContext(context)
 }

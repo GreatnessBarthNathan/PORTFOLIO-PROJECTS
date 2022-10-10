@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -56,14 +56,14 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px; 
+  border-radius: 10px;
   overflow: hidden;
   gap: 10px;
 }
 #text {
   width: 80%;
   padding: 8px;
-  border-radius: 10px; 
+  border-radius: 10px;
   border: none;
   font-size: 16px;
   outline: none;
@@ -143,11 +143,13 @@ main > h2 {
   border-bottom: 2px solid darkslategray;
   margin-bottom: 20px;
 }
-.income-container, .expense-container {
+.income-container,
+.expense-container {
   text-align: center;
   width: 100%;
 }
-.income, .expense {
+.income,
+.expense {
   margin-bottom: 20px;
   display: flex;
   width: 100%;
@@ -167,10 +169,10 @@ main > h2 {
   color: red;
 }
 .date {
-position: absolute;
-top: -13px;
-left: 5px;
-font-size: 12px;
+  position: absolute;
+  top: -13px;
+  left: 5px;
+  font-size: 12px;
 }
 .detail {
   display: flex;
@@ -191,7 +193,6 @@ font-size: 12px;
   padding: 5px;
   color: red;
   border-radius: 5px;
-
 }
 .detail p {
   text-transform: capitalize;
@@ -217,7 +218,11 @@ MODAL
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4), rgba(0,0,0,0.4));
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  );
 }
 .modal {
   width: 350px;
@@ -265,9 +270,8 @@ MEDIA QUERY
 ================
 */
 
-
 @media (max-width: 767px) {
-/* 
+  /* 
 =============
 AMOUNTS
 =============
@@ -276,62 +280,76 @@ AMOUNTS
     width: 80%;
   }
 
-/* 
+  /* 
 =============
 WRAPPER
 =============
 */
-.wrapper {
-  width: 80%;
-}
+  .wrapper {
+    width: 80%;
+  }
 }
 
 @media (max-width: 500px) {
-/* 
+  /* 
 =============
 AMOUNTS
 =============
 */
   header {
-    gap: 10px;
-    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: auto;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+    gap: 15px;
   }
 
-  header>div {
-    padding: 10px;
+  header > div {
+    background: white;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    width: 300px;
+    text-align: center;
+    border-radius: 15px;
   }
 
-/* 
+  /* 
 ==============
 FORM
 ==============
 */
-form {
-  width: 350px;
-  margin: 30px auto;
-}
+  form {
+    width: 350px;
+    margin: 30px auto;
+  }
 
-.input-buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 0;
-  gap: 10px;
-}
-.income-btn {
-  font-size: 12px;
-}
-.expense-btn {
-  font-size: 12px;
-}
+  .input-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    gap: 10px;
+  }
+  .income-btn {
+    font-size: 12px;
+  }
+  .expense-btn {
+    font-size: 12px;
+  }
 
-/* 
+  /* 
 =============
 WRAPPER
 =============
 */
-.wrapper {
-  width: 80%;
-  flex-direction: column;
-}
+  .wrapper {
+    width: 80%;
+    flex-direction: column;
+  }
 }
