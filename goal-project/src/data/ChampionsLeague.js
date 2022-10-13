@@ -1,0 +1,71 @@
+export const championsLeague = {
+  first: {
+    img: "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/bltb1e35a5c50143894/630fcd63ee215543cb7b7d8a/1242847241.jpg?quality=80&format=pjpg&auto=webp&width=500",
+    title: "Liverpool live stream and TV channel broadcast info",
+    txt: "Everything you need to know about how to watch Liverpool in the Premier League, Champions League and all major competitions",
+    time: "6h",
+    one: "Liverpool",
+    two: "Premier League",
+    response: 2,
+  },
+  second: [
+    {
+      img: "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt965e0780d6d0eb02/6342d9b104cbd711bb5eb68d/goal---web-three-way-split-window--8baf4df7-a13e-4f4f-88d5-72dc51227e3b.jpeg?quality=80&format=pjpg&auto=webp&width=500",
+      title: "Explained: Erling Haaland's celebration & what it means",
+      time: "21h",
+      one: "Burussia Dortmund",
+      response: 3,
+    },
+    {
+      img: "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/bltb065f04095a989ed/6342bb98762be510f72fff0e/Bassey.jpg?quality=80&format=pjpg&auto=webp&width=500",
+      title: "Bassey suggests how Ajax can bounce back",
+      time: "23h",
+      one: "African All Stars",
+      response: 4,
+    },
+  ],
+  third: [
+    {
+      img: "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/bltf780d8467bb4eb5f/631f2a25b09578344d49e60f/GettyImages-1416264032.jpg?quality=80&format=pjpg&auto=webp&width=500",
+      title: "Ancelotti's selection headache ahead of Shakhtar test",
+      time: "09 Oct 2022",
+      one: "Real Madrid",
+      response: 17,
+    },
+    {
+      img: "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/bltf9aceb0fcd9eab6c/63024d4b31a8a8452402a85a/Kalidou_Koulibaly_Chelsea_Leeds_2022-23.jpg?quality=80&format=pjpg&auto=webp&width=500",
+      title: "Koulibaly playing 'without personality' - Capello",
+      time: "08 Oct 2022",
+      one: "African All Stars",
+      response: 1,
+    },
+    {
+      img: "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/bltcad7bd066b858c46/633ef9dca846b03282ff2b95/Social-16-9_(2).jpg?quality=80&format=pjpg&auto=webp&width=500",
+      title: "The return of the real Lionel Messi",
+      time: "08 Oct 2022",
+      one: "PSG",
+      response: 35,
+    },
+    {
+      img: "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt284f7a027392575b/630bf70d9272341b6c448d75/GettyImages-1242787121.jpg?quality=80&format=pjpg&auto=webp&width=500",
+      title: "Osimhen's absence from Napoli training raises question marks",
+      time: "07 Oct 2022",
+      one: "African All Stars",
+      response: 2,
+    },
+    {
+      img: "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt73a96485f5f55d76/631900865a3b1c6bc6a4cae8/Salah111.jpg?quality=80&format=pjpg&auto=webp&width=500",
+      title: "Two goals in seven: Klopp explains Salah struggles",
+      time: "07 Oct 2022",
+      one: "Liverpool",
+      response: 10,
+    },
+    {
+      img: "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt624266c49f74d5e4/6322019eb09578344d49e96b/Calvin_Bassey_Ajax_2022-23-2.jpg?quality=80&format=pjpg&auto=webp&width=500",
+      title: "Bassey's passing 'shockingly bad'",
+      time: "07 Oct 2022",
+      one: "African All Stars",
+      response: 1,
+    },
+  ],
+}

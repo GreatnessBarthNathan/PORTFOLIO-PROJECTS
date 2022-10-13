@@ -1,0 +1,71 @@
+export const africanAllStars = {
+  first: {
+    img: "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/bltea937d0c966ce32e/633f3bc7a9ff4f10cf5fab6f/GettyImages-1239275686.jpg?quality=80&format=pjpg&auto=webp&width=500",
+    title: "Iwobi impresses Okocha by scoring against United",
+    txt: "Alex Iwobi scored his first goal of the season as Everton lost 2-1 to Manchester United in a Premier League match at Goodison Park on Sunday.",
+    time: "14h",
+    one: "A. Iwobi",
+    two: "Premier League",
+    response: 1,
+  },
+  second: [
+    {
+      img: "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt43d099322c33b33f/63431fbfe43e7e11f9b7831b/goal---web_three-way-split-c8356151-4677-4487-aabf-b33216f86194.jpeg?quality=80&format=pjpg&auto=webp&width=500",
+      title: "Partey, Matip and Salah stats as Arsenal outscore Liverpool",
+      time: "14h",
+      one: "Arsenal vs Liverpool",
+      response: 7,
+    },
+    {
+      img: "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt0dd7875e305e6bdd/634316506fc61c116e2a0edf/goal---web-two-way-split--6345eb51-5f22-4599-a70f-bd217447b57b_(1).jpeg?quality=80&format=pjpg&auto=webp&width=500",
+      title: "Dessers makes most of Osimhen absence until Cremonese fall apart",
+      time: "16h",
+      one: "Cremonese vs Napoli",
+      response: 4,
+    },
+  ],
+  third: [
+    {
+      img: "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt3582a72d36ea57c8/6342f5f17afe3e10dd7058ef/goal---web-four-way-split--70307b59-0ff8-44a3-b733-0839095ebca1.jpeg?quality=80&format=pjpg&auto=webp&width=500",
+      title: "All the African stats as Crystal Palace silence Leeds",
+      time: "17h",
+      one: "Crystal Palace vs Leeds",
+      response: 1,
+    },
+    {
+      img: "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/bltbc2d9859b7b8346b/63124b8852364a489a4008c1/Terem_Moffi_Lorient_2022-23-2.jpg?quality=80&format=pjpg&auto=webp&width=500",
+      title: "Moffi makes it eight goals in 10 games",
+      time: "18h",
+      one: "T. Moffi",
+      response: 1,
+    },
+    {
+      img: "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/bltdaad3370fdf0dd28/6342e1dab02c2f11c6f5e76a/goal---web-three-way-split-window--7710ebe5-89f5-4d12-92f6-3e05bb5d05de.jpeg?quality=80&format=pjpg&auto=webp&width=500",
+      title: "Ayew injury, Eze ends Palace drought with stunner 🔥",
+      time: "19h",
+      one: "Crystal Palace vs Leeds United",
+      response: 3,
+    },
+    {
+      img: "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt26ff3e6da72ad1b7/6342ec287aab9a10ec4847b9/Lookman.jpg?quality=80&format=pjpg&auto=webp&width=500",
+      title: "Lookman goal unable to propel Atalanta higher",
+      time: "19h",
+      one: "Seria A",
+      response: 2,
+    },
+    {
+      img: "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/bltef4f18bcb07820af/6342db865c76b0102fee5e80/GettyImages-1424864407.jpg?quality=80&format=pjpg&auto=webp&width=500",
+      title: "Moukoko on Klassiker milestone: 'It was sheer madness' 😲",
+      time: "19h",
+      one: "Borussia Dortmund vs Bayern Munchen",
+      response: 10,
+    },
+    {
+      img: "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/bltbf8b8ff6d737ba20/6342d2db0eb6461024a67fd0/GettyImages-1236940046.jpg?quality=80&format=pjpg&auto=webp&width=500",
+      title: "Troost-Ekong: Watford display 'makes my stomach turn'",
+      time: "19h",
+      one: "Blackpool vs Watford",
+      response: 1,
+    },
+  ],
+}

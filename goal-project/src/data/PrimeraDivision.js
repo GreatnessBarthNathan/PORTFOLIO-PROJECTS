@@ -1,0 +1,71 @@
+export const primeraDivision = {
+  first: {
+    img: "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt80f6057cb23609f7/6343406a8b96360fe9218138/Gavi-Barcelona.jpg?quality=80&format=pjpg&auto=webp&width=500",
+    title: "Pedri to the rescue for injury-hit Barcelona 🤩",
+    txt: "Barcelona moved back to the top of the La Liga table with a 1-0 win over Celta Vigo at Camp Nou, thanks to a first half effort from Pedri.",
+    time: "14h",
+    one: "Winners & Losers",
+    two: "Barcelona vs Celta de Vigo",
+    response: 1,
+  },
+  second: [
+    {
+      img: "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt3472aaf5ca5832cc/6325eaf57fd98a34463029f9/GettyImages-1424622759.jpg?quality=80&format=pjpg&auto=webp&width=500",
+      title: "Barcelona vs Celta Vigo: Lineups and LIVE updates",
+      time: "18h",
+      one: "Barcelona vs Celta de Vigo",
+      response: 7,
+    },
+    {
+      img: "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt9a0595345b08c74a/63108f32b200ed1cd56b0bd2/goal---web-two-way-split--27dfbfdd-70da-403f-bf96-1e328081620a.jpeg?quality=80&format=pjpg&auto=webp&width=500",
+      title: "La Liga top scorers 2022-23: Who has the most goals?",
+      time: "19h",
+      one: "Real Madrid",
+      response: 10,
+    },
+  ],
+  third: [
+    {
+      img: "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/bltbc6d82e3bb8b1fb6/633c54c1c9b6cc1139bb9d82/GettyImages-672035698.jpg?quality=80&format=pjpg&auto=webp&width=500",
+      title: "Barca to build Messi statue outside Camp Nou",
+      time: "18h",
+      one: "Barcelona",
+      response: 7,
+    },
+    {
+      img: "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt7b5f3bdf5f637d0e/62f128c90e13c9114efba431/GettyImages-1242318981.jpg?quality=80&format=pjpg&auto=webp&width=500",
+      title: "Super League only way to stop 'state clubs', says Laporta",
+      time: "19h",
+      one: "Barcelona",
+      response: 6,
+    },
+    {
+      img: "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt775de4f75ee94ad9/6342e16e44baeb1123ba8c6a/GettyImages-1242486412.jpg?quality=80&format=pjpg&auto=webp&width=500",
+      title: "Fan 'problem' led Neymar to seek Barcelona return",
+      time: "20h",
+      one: "Neymar",
+      response: 5,
+    },
+    {
+      img: "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/bltadd402c1ec803d80/622602b414b7c109f0acef97/goal---image-w-crest--ac83947b-ff65-4cdf-9fdf-4fd115d25a8c.png?quality=80&format=pjpg&auto=webp&width=500",
+      title: "Real legend Casillas apologises for tweet saying he's gay",
+      time: "21h",
+      one: "Real Madrid",
+      response: 8,
+    },
+    {
+      img: "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blta18ee49d1accc927/6336dc51e0d20d1ce84da1ff/GettyImages-1421030506.jpg?quality=80&format=pjpg&auto=webp&width=500",
+      title: "Transfer news and rumours: October 9",
+      time: "09 Oct 2022",
+      one: "Transfers",
+      response: 8,
+    },
+    {
+      img: "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/bltdd13dd7deb9f46a5/6341dd8b0f503e11b0617b5a/GettyImages-1243826051.jpg?quality=80&format=pjpg&auto=webp&width=500",
+      title: "Bring on Barcelona 😤",
+      time: "08 Oct 2022",
+      one: "Real Madrid",
+      response: 17,
+    },
+  ],
+}

@@ -1,0 +1,116 @@
+.sidebar {
+  display: none;
+}
+@media (max-width: 768px) {
+  .sidebar {
+    display: block;
+    width: 100%;
+    transform: translateY(-100%);
+    position: fixed;
+    height: 100vh;
+    top: 60px;
+    left: 0;
+    transition: all 0.3s linear;
+    padding: 30px 20px;
+    overflow: hidden;
+  }
+  .show-sidebar {
+    display: block;
+    width: 100%;
+    transform: translateY(0);
+    background: rgb(59, 68, 68);
+    position: fixed;
+    height: 100vh;
+    top: 60px;
+    left: 0;
+    transition: all 0.3s linear;
+    padding: 30px 20px;
+    box-shadow: 0 3px 6px black;
+    overflow: scroll;
+    z-index: 100;
+  }
+  .sidebar-container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 15px;
+    cursor: pointer;
+  }
+  .side-submenu > h2 {
+    margin-bottom: 25px;
+    font-size: 18px;
+  }
+  .side-submenu > div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 20px;
+    transition: all 0.5s linear;
+    padding-bottom: 10px;
+  }
+  .side-contents {
+    padding-left: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid darkslategray;
+  }
+  .side-contents > h3 {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+  .side-contents > li {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 14px;
+    padding-bottom: 15px;
+  }
+  .side-details {
+    padding-left: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid darkslategray;
+  }
+  .more-less {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .more-less-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: all 0.5s linear;
+  }
+}
+
+@media (max-width: 570px) {
+  .sidebar {
+    display: block;
+    width: 100%;
+    transform: translateY(-100%);
+    background: #3b4444;
+    position: fixed;
+    height: 100vh;
+    top: 60px;
+    left: 0;
+    transition: all 0.3s linear;
+    padding: 30px 20px;
+    overflow: hidden;
+  }
+  .show-sidebar {
+    display: block;
+    width: 100%;
+    transform: translateY(0);
+    background: rgb(59, 68, 68);
+    position: fixed;
+    height: 100vh;
+    top: 60px;
+    left: 0;
+    transition: all 0.3s linear;
+    padding: 30px 20px;
+    box-shadow: 0 3px 6px black;
+    overflow: scroll;
+    z-index: 100;
+  }
+}

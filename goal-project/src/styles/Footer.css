@@ -1,0 +1,61 @@
+.footer {
+  margin-top: 100px;
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.footer-logo {
+  color: white;
+  width: 90px;
+  height: 30px;
+  border: 5px solid white;
+  border-bottom: none;
+  text-align: center;
+  position: relative;
+  margin: 20px auto;
+}
+.footer-ball {
+  position: absolute;
+  top: -110%;
+  right: 2px;
+  font-size: 40px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 0 10px;
+  border-right: 2px solid white;
+}
+.naija {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.naija img {
+  width: 20px;
+}
+.naija a {
+  color: white;
+  text-decoration: none;
+}
+
+/* 
+MEDIA QUERY
+*/
+@media (max-width: 570px) {
+  .footer-links a {
+    font-size: 15px;
+  }
+}

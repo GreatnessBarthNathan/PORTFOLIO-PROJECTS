@@ -1,0 +1,350 @@
+/* 
+TOP STORIES
+*/
+.top-stories {
+  margin: 300px auto 0 auto;
+  width: 70%;
+  color: white;
+  background: transparent;
+}
+.top-stories h1 {
+  font-size: 40px;
+}
+.top-stories section {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.first {
+  width: 70%;
+  background: rgb(59, 68, 68);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.first img {
+  width: 100%;
+}
+.first-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  background: rgb(59, 68, 68);
+}
+.first-content h2 {
+  font-size: 35px;
+}
+.first-content p {
+  font-size: 17px;
+  line-height: 30px;
+}
+.first-btns {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.first-btns a {
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 5px;
+}
+.first-base {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.times {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.times p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.full-story {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#right {
+  color: orangered;
+}
+.second {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.second > div {
+  background: rgb(59, 68, 68);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.second img {
+  width: 100%;
+}
+.second-content {
+  padding: 15px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+.second-content a {
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+}
+.second-base {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.second-base p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.third {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.third > div {
+  background: rgb(59, 68, 68);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 48.3%;
+}
+.third img {
+  width: 100%;
+}
+.third-content {
+  padding: 15px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+}
+.third-content a {
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+}
+.third-base {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.third-base p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.fourth-fifth {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  width: 70%;
+}
+.fourth {
+  background: rgb(59, 68, 68);
+  padding: 20px 15px;
+  width: 50%;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.fourth div {
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 1px solid rgb(44, 42, 42);
+}
+.fourth h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.fifth {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.fifth > div {
+  background: rgb(59, 68, 68);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.fifth img {
+  width: 100%;
+}
+.fifth-content {
+  padding: 15px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+.fifth-content a {
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+}
+.fifth-base {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.fifth-base p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.more {
+  text-align: center;
+  margin-top: 40px;
+}
+.more button {
+  padding: 8px 80px;
+  border: 2px solid orangered;
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 17px;
+}
+
+/* 
+==============
+MEDIA QUERY
+==============
+*/
+@media screen and (max-width: 768px) {
+  .top-stories {
+    margin: 150px auto 0 auto;
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .top-stories section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 0px;
+    overflow: hidden;
+  }
+  .top-stories h1 {
+    padding-left: 20px;
+  }
+  .third {
+    width: 100%;
+    display: flex;
+  }
+  .fourth-fifth {
+    width: 100%;
+  }
+  .fourth,
+  .fifth {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 570px) {
+  .top-stories {
+    margin: 150px auto 0 auto;
+    width: 100%;
+    padding: 0;
+  }
+  .top-stories h1 {
+    font-size: 30px;
+    padding-left: 20px;
+  }
+  .top-stories section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .third {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  .third > div {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .third-content {
+    width: 60%;
+  }
+  .third-content h3 {
+    font-size: 15px;
+  }
+  .fourth-fifth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+  }
+  .fourth {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .fourth div h3 {
+    font-size: 16px;
+  }
+  .fourth h3 {
+    font-size: 16px;
+  }
+  .fifth {
+    width: 100%;
+  }
+
+  .fifth > div {
+    background: rgb(59, 68, 68);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .fifth-content {
+    width: 60%;
+  }
+  .fifth-content h3 {
+    font-size: 16px;
+  }
+}
