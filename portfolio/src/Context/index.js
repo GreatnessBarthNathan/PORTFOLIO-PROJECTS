@@ -1,14 +1,22 @@
-import React, {useState, useEffect, useContext} from 'react';
+import React, { useState, useEffect, useContext } from "react"
 
-const context = React.createContext();
+const context = React.createContext()
 
-function AppProvider ({children}) {
+function AppProvider({ children }) {
+  const [showLinks, setShowLinks] = useState(false)
 
+  function toggleLinks() {
+    setShowLinks(!showLinks)
+  }
   return (
-    <context.Provider value={'hello'}>
-        {children}
+    <context.Provider value={{ toggleLinks, showLinks }}>
+      {children}
     </context.Provider>
   )
 }
 
 export default AppProvider
+
+export function useGlobalContext() {
+  return useContext(context)
+}

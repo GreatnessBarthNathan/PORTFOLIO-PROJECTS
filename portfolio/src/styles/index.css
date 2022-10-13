@@ -80,6 +80,7 @@ MEDIA QUERRY
     padding-bottom: 0;
     overflow: hidden;
     height: auto;
+    width: 100%;
   }
   .logo {
     margin-bottom: 10px;

@@ -5,6 +5,8 @@ import shoppingCart from "./images/shopping-cart.png"
 import pagination from "./images/pagination.png"
 import quiz from "./images/quiz.png"
 import lightDarkMode from "./images/light-dark-mode.png"
+import groceryApp from "./images/smart-grocery-app.png"
+import goalClone from "./images/goal-clone.png"
 
 export const skills = [
   "Excellent Verbal and Writing Communication Skills, very fluent in English Language.",
@@ -64,5 +66,17 @@ export const projects = [
     name: "Light/Dark Mode",
     url: "https://gbn-light-dark-mode.netlify.app/",
     img: lightDarkMode,
+  },
+  {
+    id: 8,
+    name: "Grocery/To do App",
+    url: "https://gbn-smart-grocery-app.netlify.app/",
+    img: groceryApp,
+  },
+  {
+    id: 9,
+    name: "Goal.com Clone",
+    url: "https://gbn-goal-clone.netlify.app/",
+    img: goalClone,
   },
 ]

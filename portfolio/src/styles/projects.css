@@ -31,3 +31,18 @@
   text-align: center;
   width: 300px;
 }
+
+/* 
+MEDIA QUERY
+*/
+@media (max-width: 768px) {
+  .projects {
+    width: 100%;
+  }
+}
+
+@media (max-width: 570px) {
+  .projects {
+    width: 100%;
+  }
+}

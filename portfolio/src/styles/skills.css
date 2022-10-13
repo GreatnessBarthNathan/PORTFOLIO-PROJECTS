@@ -1,41 +1,43 @@
 body {
-    background: whitesmoke;
+  background: whitesmoke;
 }
 .skills-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  width: 80%;
 }
-.skills{
-    list-style: none;
-    counter-set: list-counter;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    font-size: 18px;
-    width: 500px;
+.skills {
+  list-style: none;
+  counter-set: list-counter;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 18px;
+  width: 80%;
+  margin: auto;
 }
 .skills li {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .skills li::before {
-    counter-increment: list-counter;
-    content: counter(list-counter);
-    background: purple;
-    padding: 8px 12px;
-    border-radius: 50%;
-    border: 3px solid darkgoldenrod;
-    color: white;
-    margin-right: 15px;
+  counter-increment: list-counter;
+  content: counter(list-counter);
+  background: purple;
+  padding: 8px 12px;
+  border-radius: 50%;
+  border: 3px solid darkgoldenrod;
+  color: white;
+  margin-right: 15px;
 }
 /* 
 MEDIA QUERRY
 */
 @media (max-width: 570px) {
-.skills {
-        width: 350px;
-        padding-bottom: 50px;
-    }
+  .skills {
+    width: 100%;
+    padding-bottom: 50px;
+  }
 }

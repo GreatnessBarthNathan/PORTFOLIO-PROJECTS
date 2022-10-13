@@ -7,23 +7,18 @@ import Skills from "./Pages/Skills"
 import Error from "./Pages/Error"
 import Navbar from "./Components/Navbar"
 
-// import App-provider
-import AppProvider from "./Context"
-
 function App() {
   return (
-    <AppProvider>
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route exact path='/' element={<Home />} />
-          <Route path='/projects' element={<Projects />} />
-          <Route path='/about-me' element={<AboutMe />} />
-          <Route path='/skills' element={<Skills />} />
-          <Route exact path='/*' element={<Error />} />
-        </Routes>
-      </Router>
-    </AppProvider>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route exact path='/' element={<Home />} />
+        <Route path='/projects' element={<Projects />} />
+        <Route path='/about-me' element={<AboutMe />} />
+        <Route path='/skills' element={<Skills />} />
+        <Route exact path='/*' element={<Error />} />
+      </Routes>
+    </Router>
   )
 }
 

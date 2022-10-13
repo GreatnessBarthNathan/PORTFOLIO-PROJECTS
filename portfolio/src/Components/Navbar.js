@@ -2,13 +2,15 @@ import React, { useState, useRef, useEffect } from "react"
 import { Link } from "react-router-dom"
 import { FaBars, FaAngleDoubleLeft, FaAngleDoubleRight } from "react-icons/fa"
 import { BsCode, BsCodeSlash } from "react-icons/bs"
+import { useGlobalContext } from "../Context/index"
 
 function Navbar() {
-  const [showLinks, setShowLinks] = useState(false)
+  const { toggleLinks, showLinks } = useGlobalContext()
   const linksRef = useRef(null)
   const linksContainer = useRef(null)
 
   function show() {
+    toggleLinks()
     const linksHeight = linksRef.current.getBoundingClientRect().height
     if (showLinks) {
       linksContainer.current.style.height = `${linksHeight}px`
@@ -40,13 +42,7 @@ function Navbar() {
         </ul>
       </div>
 
-      <button
-        className='nav-toggle'
-        onClick={() => {
-          setShowLinks(!showLinks)
-          show()
-        }}
-      >
+      <button className='nav-toggle' onClick={show}>
         <FaBars />
       </button>
     </div>
