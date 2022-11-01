@@ -1,6 +1,6 @@
 import noteTaker from "./images/note-taking-app.png"
 import budgetTracker from "./images/budget-tracker.png"
-import mealFinder from "./images/meal-db.png"
+import mealFinder from "./images/meal-finder.png"
 import shoppingCart from "./images/shopping-cart.png"
 import pagination from "./images/pagination.png"
 import quiz from "./images/quiz.png"

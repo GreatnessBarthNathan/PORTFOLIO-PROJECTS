@@ -1,6 +1,4 @@
 import React from "react"
-import "../styles/about.css"
-import { Link } from "react-router-dom"
 
 function Experience() {
   return (
@@ -27,7 +25,7 @@ function Experience() {
           projects to see for yourself.
         </p>
       </div>
-      <Link to='/projects'>My Projects</Link>
+      <a href='#'>My Projects</a>
     </div>
   )
 }

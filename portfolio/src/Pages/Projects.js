@@ -1,6 +1,5 @@
 import React from "react"
 import { projects } from "../data"
-import "../styles/projects.css"
 
 function Projects() {
   return (

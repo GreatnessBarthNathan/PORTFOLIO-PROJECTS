@@ -1,5 +1,4 @@
 import React from "react"
-import "../styles/home.css"
 import MyPicture from "../images/my-picture.jpg"
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa"
 
