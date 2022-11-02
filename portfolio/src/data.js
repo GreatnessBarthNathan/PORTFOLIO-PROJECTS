@@ -7,6 +7,7 @@ import quiz from "./images/quiz.png"
 import lightDarkMode from "./images/light-dark-mode.png"
 import groceryApp from "./images/smart-grocery-app.png"
 import goalClone from "./images/goal-clone.png"
+import clock from "./images/25+5-clock.png"
 
 export const skills = [
   "Excellent Verbal and Writing Communication Skills, very fluent in English Language.",
@@ -78,5 +79,11 @@ export const projects = [
     name: "Goal.com Clone",
     url: "https://gbn-goal-clone.netlify.app/",
     img: goalClone,
+  },
+  {
+    id: 10,
+    name: "25 + 5 Clock",
+    url: "https://gbn-clock.netlify.app/",
+    img: clock,
   },
 ]
