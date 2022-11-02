@@ -12,7 +12,7 @@ function Home() {
           A Modern Software Developer with a passion for learning, and building.
         </p>
         <div className='icons'>
-          <a href='#' target='_blank'>
+          <a href='https://github.com/GreatnessBarthNathan' target='_blank'>
             <FaGithub />
           </a>
           <a
