@@ -18,9 +18,9 @@ header h1 {
   font-size: 35px;
 }
 header h3 {
-font-size: 16px;
-margin: 10px 0;
-color: green;
+  font-size: 16px;
+  margin: 10px 0;
+  color: green;
 }
 
 /* 
@@ -69,10 +69,10 @@ form {
 }
 .note {
   background: lightgray;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
 textarea {
   padding: 10px;
@@ -83,11 +83,11 @@ label {
   font-weight: bold;
 }
 form button {
-color: white;
-background: darkgreen;
-border: none;
-padding: 10px;
-font-size: 16px;
+  color: white;
+  background: darkgreen;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
 }
 
 /* 
@@ -121,7 +121,7 @@ NOTE
 .paragraph {
   line-height: 25px;
 }
-.buttons{
+.buttons {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -168,7 +168,11 @@ MODAL
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)
+  );
 }
 .modal-content {
   width: 500px;
@@ -187,11 +191,11 @@ MODAL
   line-height: 30px;
 }
 .modal-content button {
-background: transparent;
-color: darkred;
-cursor: pointer;
-font-size: 25px;
-border: none;
+  background: transparent;
+  color: darkred;
+  cursor: pointer;
+  font-size: 25px;
+  border: none;
 }
 
 @media (max-width: 570px) {
@@ -201,11 +205,11 @@ border: none;
   ===============
   */
   .title {
-      background: whitesmoke;
-    }
+    background: whitesmoke;
+  }
   .note {
-      background: whitesmoke;
-    }
+    background: whitesmoke;
+  }
   /* 
   ===============
   NOTE
@@ -213,66 +217,66 @@ border: none;
   */
   .note-container {
     width: 90%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      margin: 50px auto;
-      gap: 15px;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    gap: 15px;
+  }
   .note-content {
     width: 350px;
   }
-.note-content h3 {
-  border-bottom: 1px solid darkgray;
- font-size: 15px;
-}
-.note-content h3 span {
-  font-size: 13px;
-}
+  .note-content h3 {
+    border-bottom: 1px solid darkgray;
+    font-size: 15px;
+  }
+  .note-content h3 span {
+    font-size: 13px;
+  }
 
-.note-content span {
-  font-size: 15px;
-}
-.buttons button {
-  padding: 5px;
-  width: 33.3%;
-  transition: all 0.5s linear;
-  cursor: pointer;
-}
-.buttons button:hover {
-  background: transparent;
-  color: black;
-  font-weight: bold;
-  border: 1px solid black;
-}
-.view {
-  background: blue;
-  border: none;
-  color: white;
-  font-weight: bold;
-}
+  .note-content span {
+    font-size: 15px;
+  }
+  .buttons button {
+    padding: 5px;
+    width: 33.3%;
+    transition: all 0.5s linear;
+    cursor: pointer;
+  }
+  .buttons button:hover {
+    background: transparent;
+    color: black;
+    font-weight: bold;
+    border: 1px solid black;
+  }
+  .view {
+    background: blue;
+    border: none;
+    color: white;
+    font-weight: bold;
+  }
 
-.edit {
-  background: green;
-  border: none;
-  color: white;
-  font-weight: bold;
-}
+  .edit {
+    background: green;
+    border: none;
+    color: white;
+    font-weight: bold;
+  }
 
-.delete {
-  background: red;
-  border: none;
-  color: white;
-  font-weight: bold;
-}
+  .delete {
+    background: red;
+    border: none;
+    color: white;
+    font-weight: bold;
+  }
 
-/* 
+  /* 
 ==============
 MODAL
 ==============
 */
-.modal-content {
-  width: 350px;
-}
+  .modal-content {
+    width: 350px;
+  }
 }

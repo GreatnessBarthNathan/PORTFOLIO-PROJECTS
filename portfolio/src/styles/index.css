@@ -3,7 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: whitesmoke;
+}
 /* 
 ======
 NAVBAR
@@ -85,7 +90,7 @@ section {
   background-size: cover;
   overflow: hidden;
   border-bottom: 5px solid darkgoldenrod;
-  padding: 145px 0;
+  height: 100vh;
 }
 .my-picture {
   border-radius: 50%;
@@ -121,22 +126,25 @@ section {
 ABOUT
 ======
 */
-.about {
+#about {
   text-align: center;
-  margin: 100px 0;
+  margin: auto;
+  padding: 50px 0;
+  background: lightblue;
+  box-shadow: 0 5px 10px black;
 }
-.about > div {
+#about > div {
   width: 600px;
   margin: 20px auto;
   text-align: left;
   font-size: large;
   line-height: 25px;
-  color: darkslategray;
+  color: black;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.about a {
+#about a {
   color: white;
   text-decoration: none;
   font-size: 18px;
@@ -150,11 +158,17 @@ ABOUT
 SKILLS
 ======
 */
+#skills {
+  text-align: center;
+  padding: 50px 0;
+  background: rgb(226, 182, 71);
+  color: black;
+}
 .skills-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px auto;
+  margin: 20px auto;
   width: 80%;
 }
 .skills {
@@ -187,12 +201,18 @@ SKILLS
 PROJECTS
 ========
 */
+#projects {
+  width: 100%;
+  text-align: center;
+  padding-top: 50px;
+  background: rgb(223, 234, 238);
+}
 .projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 100%;
   margin: 50px auto;
   gap: 30px;
   margin-bottom: 50px;
@@ -204,14 +224,13 @@ PROJECTS
   transition: all 0.3s linear;
   text-align: center;
   padding-bottom: 10px;
-  width: 400px;
+  width: 350px;
 }
 .single-project:hover {
   transform: translateY(-5px);
 }
 .single-project img {
   width: 100%;
-  /* height: 300px; */
   margin-bottom: 10px;
   box-shadow: 0 3px 5px black;
 }
@@ -219,7 +238,6 @@ PROJECTS
   color: darkslategray;
   letter-spacing: 1px;
   text-align: center;
-  width: 300px;
 }
 
 /* 
@@ -247,10 +265,10 @@ MEDIA QUERRY
   /* 
   ABOUT
   */
-  .about {
+  #about {
     margin-top: 50px;
   }
-  .about > div {
+  #about > div {
     width: 300px;
   }
 

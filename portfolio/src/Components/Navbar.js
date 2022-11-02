@@ -15,23 +15,19 @@ function Navbar() {
       <div className='links-container' ref={linksContainer}>
         <ul className='links' ref={linksRef}>
           <li>
-            <a href='#'>Home</a>
+            <a href='#home'>Home</a>
           </li>
           <li>
-            <a href='#'>About Me</a>
+            <a href='#about'>About Me</a>
           </li>
           <li>
-            <a href='#'>Skills</a>
+            <a href='#skills'>Skills</a>
           </li>
           <li>
-            <a to='#'>Projects</a>
+            <a href='#projects'>Projects</a>
           </li>
         </ul>
       </div>
-
-      <button className='nav-toggle'>
-        <FaBars />
-      </button>
     </div>
   )
 }

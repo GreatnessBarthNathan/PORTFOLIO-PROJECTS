@@ -1,10 +1,10 @@
 import React from "react"
 import MyPicture from "../images/my-picture.jpg"
-import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa"
+import { FaGithub, FaLinkedin } from "react-icons/fa"
 
 function Home() {
   return (
-    <section>
+    <section id='home'>
       <div className='content'>
         <img src={MyPicture} alt='my-image' className='my-picture' />
         <h1>Hi, My name is Bartholomew</h1>

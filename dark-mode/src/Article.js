@@ -1,5 +1,4 @@
 import React from "react"
-import moment from "moment"
 import { BsTrophyFill } from "react-icons/bs"
 
 const Article = ({ club, country, stadium, length }) => {

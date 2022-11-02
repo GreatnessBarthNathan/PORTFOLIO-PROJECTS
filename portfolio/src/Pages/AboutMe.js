@@ -2,7 +2,8 @@ import React from "react"
 
 function Experience() {
   return (
-    <div className='about'>
+    <div id='about'>
+      <h1>About Me</h1>
       <div>
         <p>Hi, my name is Bartholomew Ekemezie.</p>
         <p>I am a Front-End Web Developer and I love to build things.</p>
@@ -21,11 +22,9 @@ function Experience() {
         <li>Use a variety of markup languages to create your web pages...</li>
         <p>
           If you need the Guy that gets the work done on any of these, I'll be
-          happy to talk. <br /> <br /> Have any doubts? Please head to my
-          projects to see for yourself.
+          happy to talk. <br /> <br />
         </p>
       </div>
-      <a href='#'>My Projects</a>
     </div>
   )
 }

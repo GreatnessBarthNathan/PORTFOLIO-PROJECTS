@@ -10,9 +10,10 @@ function App() {
     <div id='wrapper'>
       <Navbar />
       <Home />
-      <Projects />
       <AboutMe />
       <Skills />
+
+      <Projects />
     </div>
   )
 }
