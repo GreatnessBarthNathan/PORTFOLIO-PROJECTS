@@ -1,11 +1,10 @@
 import React from "react"
-import "../styles/home.css"
 import MyPicture from "../images/my-picture.jpg"
-import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa"
+import { FaGithub, FaLinkedin } from "react-icons/fa"
 
 function Home() {
   return (
-    <section>
+    <section id='home'>
       <div className='content'>
         <img src={MyPicture} alt='my-image' className='my-picture' />
         <h1>Hi, My name is Bartholomew</h1>
@@ -13,7 +12,7 @@ function Home() {
           A Modern Software Developer with a passion for learning, and building.
         </p>
         <div className='icons'>
-          <a href='#' target='_blank'>
+          <a href='https://github.com/GreatnessBarthNathan' target='_blank'>
             <FaGithub />
           </a>
           <a

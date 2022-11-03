@@ -1,25 +1,34 @@
-import React, { useState, useRef, useEffect } from "react"
-import { Link } from "react-router-dom"
+import React, { useRef, useState } from "react"
 import { FaBars, FaAngleDoubleLeft, FaAngleDoubleRight } from "react-icons/fa"
-import { BsCode, BsCodeSlash } from "react-icons/bs"
-import { useGlobalContext } from "../Context/index"
 
-function Navbar() {
-  const { toggleLinks, showLinks } = useGlobalContext()
+function Navbar({ actions }) {
   const linksRef = useRef(null)
   const linksContainer = useRef(null)
+  const { shownav } = actions
 
-  function show() {
-    toggleLinks()
-    const linksHeight = linksRef.current.getBoundingClientRect().height
-    if (showLinks) {
-      linksContainer.current.style.height = `${linksHeight}px`
+  function setNavigation(e) {
+    e.preventDefault()
+    const scrollheight = window.scrollY
+    const navbar = document.getElementById("navbar")
+    const navHeight = navbar.getBoundingClientRect().height
+    const id = e.target.getAttribute("href").slice(1)
+    const element = document.getElementById(id)
+    let position = element.offsetTop - navHeight
+    if (!shownav) {
+      position = position - navHeight
+      window.scrollTo({
+        left: 0,
+        top: position,
+      })
     } else {
-      linksContainer.current.style.height = `${0}px`
+      window.scrollTo({
+        left: 0,
+        top: position,
+      })
     }
   }
   return (
-    <div className='navbar'>
+    <div id='navbar' className={shownav ? "fixed-nav" : "navbar"}>
       <div className='logo'>
         <FaAngleDoubleLeft />
         <span>GBN</span>
@@ -28,23 +37,27 @@ function Navbar() {
       <div className='links-container' ref={linksContainer}>
         <ul className='links' ref={linksRef}>
           <li>
-            <Link to='/'>Home</Link>
+            <a href='#home' onClick={setNavigation}>
+              Home
+            </a>
           </li>
           <li>
-            <Link to='/about-me'>About Me</Link>
+            <a href='#about' onClick={setNavigation}>
+              About Me
+            </a>
           </li>
           <li>
-            <Link to='/skills'>Skills</Link>
+            <a href='#skills' onClick={setNavigation}>
+              Skills
+            </a>
           </li>
           <li>
-            <Link to='/projects'>Projects</Link>
+            <a href='#projects' onClick={setNavigation}>
+              Projects
+            </a>
           </li>
         </ul>
       </div>
-
-      <button className='nav-toggle' onClick={show}>
-        <FaBars />
-      </button>
     </div>
   )
 }

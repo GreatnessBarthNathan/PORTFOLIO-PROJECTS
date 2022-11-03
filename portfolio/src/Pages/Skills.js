@@ -1,15 +1,18 @@
-import React from 'react';
-import '../styles/skills.css';
-import {skills} from '../data';
+import React from "react"
+import { skills } from "../data"
 
 const Skills = () => {
   return (
-    <div className='skills-container'>
-         <ol className='skills'>{skills.map((skill, index)=> {
+    <div id='skills'>
+      <h1>My Skills</h1>
+      <div className='skills-container'>
+        <ol className='skills'>
+          {skills.map((skill, index) => {
             return <li key={index}>{skill}</li>
-          })}</ol>
+          })}
+        </ol>
+      </div>
     </div>
-    
   )
 }
 
