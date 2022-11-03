@@ -22,6 +22,19 @@ NAVBAR
   border-bottom: 5px solid darkgoldenrod;
   position: relative;
 }
+.fixed-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 75px;
+  border-bottom: 5px solid darkgoldenrod;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  z-index: 1000;
+}
 .logo {
   display: flex;
   justify-content: center;
@@ -159,10 +172,12 @@ SKILLS
 ======
 */
 #skills {
-  text-align: center;
   padding: 50px 0;
   background: rgb(226, 182, 71);
   color: black;
+}
+#skills h1 {
+  text-align: center;
 }
 .skills-container {
   display: flex;
@@ -213,9 +228,9 @@ PROJECTS
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: 50px auto;
+  margin-top: 50px;
+  padding-bottom: 50px;
   gap: 30px;
-  margin-bottom: 50px;
 }
 .single-project {
   box-shadow: 3px 5px 8px black;
@@ -241,10 +256,57 @@ PROJECTS
 }
 
 /* 
+=======
+FOOTER
+=======
+*/
+#footer {
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 30px;
+  gap: 15px;
+  padding: 30px;
+  color: white;
+  font-size: 18px;
+}
+#footer a {
+  color: white;
+  background: transparent;
+  font-size: 30px;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+/* 
 ==============
 MEDIA QUERRY
 ==============
 */
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: auto;
+    padding: 5px 0;
+  }
+  .fixed-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: auto;
+    padding: 5px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 1000;
+  }
+}
 @media (max-width: 570px) {
   /* 
   HOME
@@ -265,11 +327,10 @@ MEDIA QUERRY
   /* 
   ABOUT
   */
-  #about {
-    margin-top: 50px;
-  }
+
   #about > div {
-    width: 300px;
+    width: 100%;
+    padding: 0 20px;
   }
 
   /* 
