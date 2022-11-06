@@ -8,7 +8,6 @@ import Footer from "./Components/Footer"
 
 function App() {
   const [shownav, setShownav] = useState(false)
-  const wrapRef = useRef(null)
   function setFixedNav() {
     const navbar = document.getElementById("navbar")
     const navHeight = navbar.getBoundingClientRect().height
@@ -25,7 +24,7 @@ function App() {
     return () => window.removeEventListener("scroll", setFixedNav)
   })
   return (
-    <div id='wrapper' ref={wrapRef}>
+    <div id='wrapper'>
       <Navbar actions={{ shownav }} />
       <Home />
       <AboutMe />

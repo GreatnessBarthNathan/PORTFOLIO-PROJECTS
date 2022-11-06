@@ -5,7 +5,7 @@ import { SiGmail } from "react-icons/si"
 const Footer = () => {
   return (
     <div id='footer'>
-      <div>
+      <div >
         <a href='https://github.com/GreatnessBarthNathan'>
           <FaGithub />
         </a>
@@ -15,7 +15,7 @@ const Footer = () => {
       </div>
 
       <div>
-        <h3>Contact</h3>
+        <h3>Contact:</h3>
         <p>Telephone: +234 816 270 0336</p>
         <p>Email: ekemeziebartholomew@gmail.com</p>
       </div>

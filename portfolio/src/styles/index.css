@@ -330,7 +330,8 @@ MEDIA QUERRY
 
   #about > div {
     width: 100%;
-    padding: 0 20px;
+    padding: 0 15px;
+    font-size: 15px;
   }
 
   /* 
@@ -339,11 +340,15 @@ MEDIA QUERRY
   .skills {
     width: 100%;
     padding-bottom: 50px;
+    font-size: 15px;
   }
   /* 
 PROJECTS
 */
   .projects {
     width: 100%;
+  }
+  #footer {
+    font-size: 15px;
   }
 }

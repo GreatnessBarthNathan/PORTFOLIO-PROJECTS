@@ -6,10 +6,13 @@ const SubMenu = ({ name, contents }) => {
   const [showMore, setShowMore] = useState(false)
   return (
     <div className='side-submenu'>
-      <h2 onClick={() => setShowMore(!showMore)} className='more-less'>
+      <h2 className='more-less'>
         <span>{name}</span>
         {contents.length > 0 && (
-          <button className='more-less-btn'>
+          <button
+            onClick={() => setShowMore(!showMore)}
+            className='more-less-btn'
+          >
             {showMore ? <AiOutlineMinus /> : <AiOutlinePlus />}
           </button>
         )}

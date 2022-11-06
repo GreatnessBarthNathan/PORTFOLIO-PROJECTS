@@ -6,9 +6,12 @@ const Content = ({ head, details }) => {
   const [showMore, setShowMore] = useState(false)
   return (
     <div className='side-contents'>
-      <h3 onClick={() => setShowMore(!showMore)} className='more-less'>
+      <h3 className='more-less'>
         <span>{head}</span>
-        <button className='more-less-btn'>
+        <button
+          onClick={() => setShowMore(!showMore)}
+          className='more-less-btn'
+        >
           {showMore ? <AiOutlineMinus /> : <AiOutlinePlus />}
         </button>
       </h3>

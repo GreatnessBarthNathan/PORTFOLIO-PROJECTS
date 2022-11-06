@@ -8,7 +8,6 @@ function Navbar({ actions }) {
 
   function setNavigation(e) {
     e.preventDefault()
-    const scrollheight = window.scrollY
     const navbar = document.getElementById("navbar")
     const navHeight = navbar.getBoundingClientRect().height
     const id = e.target.getAttribute("href").slice(1)
