@@ -84,7 +84,7 @@ function SingleMeal() {
               <h3>Name: {name}</h3>
               <h4>Category: {category}</h4>
               <div>
-                Ingredients:{" "}
+                Ingredients:
                 {ingredients.map((ingredient, index) => {
                   if (!ingredient) {
                     return ""
