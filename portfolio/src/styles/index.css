@@ -182,35 +182,25 @@ SKILLS
 .skills-container {
   display: flex;
   justify-content: center;
+  gap: 30px;
   align-items: center;
-  margin: 20px auto;
-  width: 80%;
+  flex-wrap: wrap;
+  margin-top: 40px;
 }
 .skills {
-  list-style: none;
-  counter-set: list-counter;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  font-size: 18px;
-  width: 80%;
-  margin: auto;
-}
-.skills li {
-  display: flex;
-  align-items: center;
-}
-.skills li::before {
-  counter-increment: list-counter;
-  content: counter(list-counter);
-  background: purple;
-  padding: 8px 12px;
-  border-radius: 50%;
-  border: 3px solid darkgoldenrod;
+  width: 250px;
+  text-align: center;
   color: white;
-  margin-right: 15px;
+  border-radius: 10px;
 }
-
+.skills img {
+  width: 100%;
+  margin-bottom: 15px;
+  transition: all 0.3s linear;
+}
+.skills img:hover {
+  transform: translateY(-5px);
+}
 /* 
 ========
 PROJECTS
@@ -338,7 +328,7 @@ MEDIA QUERRY
   SKILLS
   */
   .skills {
-    width: 100%;
+    width: 50%;
     padding-bottom: 50px;
     font-size: 15px;
   }

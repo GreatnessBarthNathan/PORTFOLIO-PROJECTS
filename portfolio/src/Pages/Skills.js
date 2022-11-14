@@ -6,11 +6,15 @@ const Skills = () => {
     <div id='skills'>
       <h1>My Skills</h1>
       <div className='skills-container'>
-        <ol className='skills'>
-          {skills.map((skill, index) => {
-            return <li key={index}>{skill}</li>
-          })}
-        </ol>
+        {skills.map((skill) => {
+          const { id, name, img } = skill
+          return (
+            <div key={id} className='skills'>
+              <img src={img} alt={name} />
+              <h3>{name}</h3>
+            </div>
+          )
+        })}
       </div>
     </div>
   )
