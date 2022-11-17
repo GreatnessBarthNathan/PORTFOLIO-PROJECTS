@@ -8,6 +8,7 @@ import lightDarkMode from "./images/light-dark-mode.png"
 import groceryApp from "./images/smart-grocery-app.png"
 import goalClone from "./images/goal-clone.png"
 import clock from "./images/25+5-clock.png"
+import calculator from "./images/jscalculator.png"
 
 // import icons
 import html from "./icons/html.png"
@@ -77,9 +78,9 @@ export const projects = [
   },
   {
     id: 5,
-    name: "Pagination",
-    url: "https://gbn-pagination.netlify.app/",
-    img: pagination,
+    name: "JS Calculator",
+    url: "https://gbn-jscalculator.netlify.app/",
+    img: calculator,
   },
   {
     id: 6,
@@ -110,5 +111,11 @@ export const projects = [
     name: "25 + 5 Clock",
     url: "https://gbn-clock.netlify.app/",
     img: clock,
+  },
+  {
+    id: 11,
+    name: "Pagination",
+    url: "https://gbn-pagination.netlify.app/",
+    img: pagination,
   },
 ]
