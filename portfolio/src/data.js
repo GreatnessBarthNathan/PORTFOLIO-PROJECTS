@@ -2,13 +2,13 @@ import noteTaker from "./images/note-taking-app.png"
 import budgetTracker from "./images/budget-tracker.png"
 import mealFinder from "./images/meal-finder.png"
 import shoppingCart from "./images/shopping-cart.png"
-import pagination from "./images/pagination.png"
 import quiz from "./images/quiz.png"
 import lightDarkMode from "./images/light-dark-mode.png"
 import groceryApp from "./images/smart-grocery-app.png"
 import goalClone from "./images/goal-clone.png"
 import clock from "./images/25+5-clock.png"
 import calculator from "./images/jscalculator.png"
+import igates from "./images/igates.png"
 
 // import icons
 import html from "./icons/html.png"
@@ -114,8 +114,8 @@ export const projects = [
   },
   {
     id: 11,
-    name: "Pagination",
-    url: "https://gbn-pagination.netlify.app/",
-    img: pagination,
+    name: "IGATES Template",
+    url: "https://igates-template.netlify.app",
+    img: igates,
   },
 ]
