@@ -269,6 +269,15 @@ FOOTER
   text-decoration: none;
   margin: 0 15px;
 }
+.reveal {
+  opacity: 0;
+  transform: translateY(150px);
+  transition: all 2s ease;
+}
+.active {
+  opacity: 1;
+  transform: translateY(0px);
+}
 
 /* 
 ==============

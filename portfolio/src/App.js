@@ -8,7 +8,9 @@ import Footer from "./Components/Footer"
 
 function App() {
   const [shownav, setShownav] = useState(false)
+
   function setFixedNav() {
+    //  FOR NAVBAR
     const navbar = document.getElementById("navbar")
     const navHeight = navbar.getBoundingClientRect().height
     const scrollHeight = window.scrollY
@@ -17,6 +19,19 @@ function App() {
     } else {
       setShownav(false)
     }
+
+    // FOR FADE IN
+    const sections = document.querySelectorAll(".reveal")
+    const windowHeight = window.innerHeight
+
+    sections.forEach((section) => {
+      const sectionTop = section.getBoundingClientRect().top
+      if (sectionTop < windowHeight) {
+        section.classList.add("active")
+      } else {
+        section.classList.remove("active")
+      }
+    })
   }
 
   useEffect(() => {

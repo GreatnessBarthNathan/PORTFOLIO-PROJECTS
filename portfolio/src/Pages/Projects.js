@@ -4,12 +4,12 @@ import { projects } from "../data"
 function Projects() {
   return (
     <div id='projects'>
-        <h1>Projects</h1>
+      <h1>Projects</h1>
       <div className='projects'>
         {projects.map((project) => {
           const { id, name, url, img } = project
           return (
-            <div key={id} className='single-project'>
+            <div key={id} className='single-project reveal'>
               <a href={url} target='_blank'>
                 <img src={img} alt={name} />
               </a>

@@ -4,7 +4,7 @@ function Experience() {
   return (
     <div id='about'>
       <h1>About Me</h1>
-      <div>
+      <div className='reveal'>
         <p>Hi, my name is Bartholomew Ekemezie.</p>
         <p>I am a Front-End Web Developer and I love to build things.</p>
         <p>
