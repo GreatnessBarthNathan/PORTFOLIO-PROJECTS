@@ -17,6 +17,7 @@ import javascript from "./icons/javascript.png"
 import react from "./icons/react.png"
 import redux from "./icons/redux.png"
 import git from "./icons/git.png"
+import tailwind from "./icons/tailwind-css.png"
 
 export const skills = [
   {
@@ -48,6 +49,11 @@ export const skills = [
     id: 6,
     name: "Git",
     img: git,
+  },
+  {
+    id: 6,
+    name: "Tailwind",
+    img: tailwind,
   },
 ]
 
@@ -114,8 +120,8 @@ export const projects = [
   },
   {
     id: 11,
-    name: "IGATES Template",
-    url: "https://igates-template.netlify.app",
+    name: "IGATES Website",
+    url: "https://igates.io",
     img: igates,
   },
 ]
