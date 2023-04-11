@@ -3,17 +3,17 @@ import aboutImg from "../images/about-vector.png"
 
 function AboutMe() {
   return (
-    <div id='about' className='px-3 pb-20 reveal'>
+    <div id='about' className='px-3 pb-20 '>
       <h2 className='text-2xl pt-20 text-center font-bold md:text-5xl'>
         About <span className='text-red-500'>Me</span>
       </h2>
-      <div className='w-4/5 pt-20 mx-auto flex items-center flex-col md:flex-row md:space-x-10'>
+      <div className='w-4/5 pt-20 mx-auto flex items-center flex-col md:flex-row md:space-x-10 reveal'>
         {/* image */}
         <div className='w-full md:w-1/2'>
           <img src={aboutImg} alt='' className='w-full' />
         </div>
         {/* write up */}
-        <ul className='w-full md:w-1/2 flex flex-col space-y-5 '>
+        <ul className='w-full md:w-1/2 flex flex-col space-y-5 reveal'>
           <li className='text-slate-600 text-xs sm:text-base'>
             Hello, my name is Bartholomew Ekemezie, a true visionary in the
             world of web development. As a full-stack developer, I have honed my

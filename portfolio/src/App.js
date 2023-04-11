@@ -25,7 +25,7 @@ function App() {
     const elements = document.querySelectorAll(".reveal")
 
     elements.forEach((item) => {
-      const top = item.getBoundingClientRect().top + 50
+      const top = item.getBoundingClientRect().top
       if (scrollHeight > top) {
         item.classList.add("active")
       } else {
