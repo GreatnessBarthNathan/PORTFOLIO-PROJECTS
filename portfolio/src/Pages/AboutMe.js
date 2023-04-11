@@ -7,7 +7,7 @@ function AboutMe() {
       <h2 className='text-2xl pt-20 text-center font-bold md:text-5xl'>
         About <span className='text-red-500'>Me</span>
       </h2>
-      <div className='w-4/5 pt-20 mx-auto flex items-center flex-col md:flex-row md:space-x-10 reveal'>
+      <div className='w-4/5 pt-20 mx-auto flex items-center flex-col md:flex-row md:space-x-10'>
         {/* image */}
         <div className='w-full md:w-1/2'>
           <img src={aboutImg} alt='' className='w-full' />
