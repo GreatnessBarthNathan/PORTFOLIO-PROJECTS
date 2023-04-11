@@ -1,62 +1,56 @@
 import React, { useRef, useState } from "react"
-import { FaBars, FaAngleDoubleLeft, FaAngleDoubleRight } from "react-icons/fa"
+import { FaAngleDoubleLeft, FaAngleDoubleRight } from "react-icons/fa"
+import { BiMenuAltRight } from "react-icons/bi"
+import { navlinks } from "../nav-links/navlinks"
 
-function Navbar({ actions }) {
-  const linksRef = useRef(null)
-  const linksContainer = useRef(null)
-  const { shownav } = actions
+function Navbar({ openSidebar }) {
+  // const linksRef = useRef(null)
+  // const linksContainer = useRef(null)
+  // const { shownav } = actions
 
-  function setNavigation(e) {
-    e.preventDefault()
-    const navbar = document.getElementById("navbar")
-    const navHeight = navbar.getBoundingClientRect().height
-    const id = e.target.getAttribute("href").slice(1)
-    const element = document.getElementById(id)
-    let position = element.offsetTop - navHeight
-    if (!shownav) {
-      position = position - navHeight
-      window.scrollTo({
-        left: 0,
-        top: position,
-      })
-    } else {
-      window.scrollTo({
-        left: 0,
-        top: position,
-      })
-    }
-  }
+  // function setNavigation(e) {
+  //   e.preventDefault()
+  //   const navbar = document.getElementById("navbar")
+  //   const navHeight = navbar.getBoundingClientRect().height
+  //   const id = e.target.getAttribute("href").slice(1)
+  //   const element = document.getElementById(id)
+  //   let position = element.offsetTop - navHeight
+  //   if (!shownav) {
+  //     position = position - navHeight
+  //     window.scrollTo({
+  //       left: 0,
+  //       top: position,
+  //     })
+  //   } else {
+  //     window.scrollTo({
+  //       left: 0,
+  //       top: position,
+  //     })
+  //   }
+  // }
   return (
-    <div id='navbar' className={shownav ? "fixed-nav" : "navbar"}>
-      <div className='logo'>
+    <div className='fixed w-full left-0 top-0 bg-blue-100 flex justify-between h-16 px-4 z-20'>
+      <div className='flex items-center text-red-900 font-bold text-3xl'>
         <FaAngleDoubleLeft />
-        <span>GBN</span>
+        <span className='text-blue-900'>GBN</span>
         <FaAngleDoubleRight />
       </div>
-      <div className='links-container' ref={linksContainer}>
-        <ul className='links' ref={linksRef}>
-          <li>
-            <a href='#home' onClick={setNavigation}>
-              Home
+      <div className='hidden flex items-center space-x-10 md:flex'>
+        {navlinks.map((link, index) => {
+          return (
+            <a
+              key={index}
+              href={link.href}
+              className='font-bold p-2 rounded-md hover:bg-red-400 hover:text-white  ease-in-out duration-500'
+            >
+              {link.link}
             </a>
-          </li>
-          <li>
-            <a href='#about' onClick={setNavigation}>
-              About Me
-            </a>
-          </li>
-          <li>
-            <a href='#skills' onClick={setNavigation}>
-              Skills
-            </a>
-          </li>
-          <li>
-            <a href='#projects' onClick={setNavigation}>
-              Projects
-            </a>
-          </li>
-        </ul>
+          )
+        })}
       </div>
+      <button className='text-3xl block md:hidden' onClick={openSidebar}>
+        <BiMenuAltRight />
+      </button>
     </div>
   )
 }

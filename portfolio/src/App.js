@@ -4,48 +4,54 @@ import Projects from "./Pages/Projects"
 import AboutMe from "./Pages/AboutMe"
 import Skills from "./Pages/Skills"
 import Navbar from "./Components/Navbar"
-import Footer from "./Components/Footer"
+import Contact from "./Pages/Contact"
+import StickyBar from "./Components/StickyBar"
+import SideBar from "./Components/SideBar"
 
 function App() {
-  const [shownav, setShownav] = useState(false)
+  const [showSidebar, setShowSidebar] = useState(false)
 
-  function setFixedNav() {
-    //  FOR NAVBAR
-    const navbar = document.getElementById("navbar")
-    const navHeight = navbar.getBoundingClientRect().height
-    const scrollHeight = window.scrollY
-    if (scrollHeight > navHeight) {
-      setShownav(true)
-    } else {
-      setShownav(false)
-    }
+  const openSidebar = () => {
+    setShowSidebar(true)
+  }
 
-    // FOR FADE IN
-    const sections = document.querySelectorAll(".reveal")
-    const windowHeight = window.innerHeight
+  const closeSidebar = () => {
+    setShowSidebar(false)
+    console.log("sidebar close", showSidebar)
+  }
 
-    sections.forEach((section) => {
-      const sectionTop = section.getBoundingClientRect().top
-      if (sectionTop < windowHeight) {
-        section.classList.add("active")
+  const revealContent = () => {
+    const scrollHeight = window.pageYOffset
+    const elements = document.querySelectorAll(".reveal")
+
+    elements.forEach((item) => {
+      const top = item.getBoundingClientRect().top + 50
+      if (scrollHeight > top) {
+        item.classList.add("active")
       } else {
-        section.classList.remove("active")
+        item.classList.remove("active")
       }
     })
   }
 
   useEffect(() => {
-    window.addEventListener("scroll", setFixedNav)
-    return () => window.removeEventListener("scroll", setFixedNav)
+    window.addEventListener("scroll", revealContent)
+
+    return () => {
+      window.removeEventListener("scroll", revealContent)
+    }
   })
+
   return (
-    <div id='wrapper'>
-      <Navbar actions={{ shownav }} />
+    <div>
+      <Navbar openSidebar={openSidebar} />
       <Home />
       <AboutMe />
-      <Skills />
       <Projects />
-      <Footer />
+      <Skills />
+      <Contact />
+      <StickyBar />
+      <SideBar closeSidebar={closeSidebar} showSidebar={showSidebar} />
     </div>
   )
 }

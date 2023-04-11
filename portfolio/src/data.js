@@ -18,6 +18,13 @@ import react from "./icons/react.png"
 import redux from "./icons/redux.png"
 import git from "./icons/git.png"
 import tailwind from "./icons/tailwind-css.png"
+import postman from "./icons/postman.png"
+import mongodb from "./icons/mongodb.png"
+import nodejs from "./icons/node-js.png"
+import github from "./icons/github.png"
+import express from "./icons/express.png"
+import mui from "./icons/mui.png"
+import mongoose from "./icons/mongoose.png"
 
 export const skills = [
   {
@@ -51,9 +58,44 @@ export const skills = [
     img: git,
   },
   {
-    id: 6,
+    id: 7,
     name: "Tailwind",
     img: tailwind,
+  },
+  {
+    id: 8,
+    name: "Postman",
+    img: postman,
+  },
+  {
+    id: 9,
+    name: "MongoDb",
+    img: mongodb,
+  },
+  {
+    id: 10,
+    name: "Nodejs",
+    img: nodejs,
+  },
+  {
+    id: 11,
+    name: "Express",
+    img: express,
+  },
+  {
+    id: 12,
+    name: "Github",
+    img: github,
+  },
+  {
+    id: 13,
+    name: "Material UI",
+    img: mui,
+  },
+  {
+    id: 14,
+    name: "Mongoose",
+    img: mongoose,
   },
 ]
 
@@ -121,7 +163,7 @@ export const projects = [
   {
     id: 11,
     name: "IGATES Website",
-    url: "https://igates.io",
+    url: "https://igates-website.netlify.app",
     img: igates,
   },
 ]
